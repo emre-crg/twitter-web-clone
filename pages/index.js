@@ -7,10 +7,6 @@ function HomePage() {
   return (
     <div>
       <h1>Welcome to Next.js!</h1>
-
-      <Navigation/>
-
-      <Button>Merhaba</Button>
     </div>
   )
 }
