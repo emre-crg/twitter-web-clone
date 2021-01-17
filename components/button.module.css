@@ -1,4 +1,20 @@
 .button {
   background: transparent;
   cursor: pointer;
+  border-radius: 99px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--c-text-color);
+  transition: var(--fade);
+  
+  &:hover {
+    color: var(--c-theme);
+    background-color: var(--c-theme-20);
+  }
+
+}
+
+.fullWitdth {
+  width: 100% !important;
 }
