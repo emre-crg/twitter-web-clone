@@ -8,15 +8,19 @@ import { ArrowBottom } from './icons'
 import Button from './button'
 import TextBody from './text-body'
 
-function ProfileBox({ name = 'Emre Çırganış', slug = 'CrgEmre' }) {
+function ProfileBox({ flat = false, name = 'Emre Çırganış', slug = 'CrgEmre' }) {
   return (
     <Button className={cn([styles.box])}>
-      <Photo />
+      <Photo size={39} />
+      {!flat && (
+        <>
       <div className={styles.body}>
         <TextBody bold>{name}</TextBody>
         <TextBody className={styles.slug}>@{slug}</TextBody>
       </div>
       <ArrowBottom className={styles.icon} />
+      </>
+      )}
     </Button>
   )
 }

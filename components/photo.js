@@ -5,10 +5,11 @@ import styles from './photo.module.css'
 
 function Photo({
   src = 'https://avatars2.githubusercontent.com/u/49869820?s=460&u=bfa470168cd4c283f6f7f4d6cbd87a6d82659154&v=4',
-  alt
+  alt,
+  size = 47
 }) {
   return (
-    <div className={cn([styles.photo])}>
+    <div className={cn([styles.photo])} style={{ width: size, height: size }}>
       <img className={styles.img} src={src} alt={alt}></img>
     </div>
   )
