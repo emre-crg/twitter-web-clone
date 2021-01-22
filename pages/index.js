@@ -1,11 +1,12 @@
 import React from 'react'
 
+import useWindowSize from '../hooks/useWindowSize'
 import CONST from '../constants/index'
+
 import Layout from '../components/layout'
 import Sidebar from '../components/col-sidebar'
 import Main from '../components/col-main'
 import Extra from '../components/col-extra'
-import useWindowSize from '../hooks/useWindowSize'
 
 function HomePage() {
   const size = useWindowSize()
