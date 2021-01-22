@@ -5,7 +5,10 @@
   max-width: 670px;
   margin-left: auto;
   margin-right: auto;
-
+  
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
   @media (--t) {
     max-width: 1060px;
     grid-template-columns: auto 1fr 300px;
