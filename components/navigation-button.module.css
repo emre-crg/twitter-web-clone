@@ -13,7 +13,7 @@
 }
 
 .navButtonSelected {
-  color: var(--c-theme);
+  color: var(--c-theme) !important;
 }
 
 .notify {
